@@ -1,0 +1,222 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+ padding: 6px 5px;
+ margin-bottom: 5px;
+ border: 1px solid #ddd;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+*,*::after, *::before, a{
+box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+:root{
+    --shadow-1 : box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    --shadow-2 : box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+/* banner */
+
+
+.banner{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient( rgba(0,0,0, .6),rgba(0,0,0, .7) ), url(https://img.wallpapersafari.com/desktop/1024/576/3/63/Hhcoe0.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.banner .banner-contant{
+    background-color: rgba(235, 201, 191, 0.198);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+.banner .banner-contant h1{
+    font-size: 45px;
+    font-weight: 900;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.banner .banner-contant p{
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 7px;
+    color: #fff;
+}
+
+.banner .banner-contant a{
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+/* tr-modal */
+
+
+.tr-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .6);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100px);
+    transition: all .5s ease-in-out;
+   
+   
+    
+}
+
+/* modal event */
+.tr-modal.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+
+.tr-modal .modal-contant{
+    background-color: #fff;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    
+
+}
+
+.tr-modal .modal-contant .modal-header{
+    font-size: 18px;
+    padding: 10px 13px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.tr-modal .modal-contant .modal-header button{
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.tr-modal .modal-contant .modal-body{
+    padding: 10px 13px;
+   
+}
+
+.modal-futter{
+    padding: 10px 13px;
+}
+.modal-futter a{
+    font-size: 18px;
+    padding: 7px 15px;
+    background-color: rgb(255, 0, 55);
+    color: #fff;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* custom element */
+
+.abu-custom{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.918);
+    
+}
+.abu-contant{
+    width: 450px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: var(--shadow-1);
+    border: 1px solid #ddd;
+}
+
+.abu-header{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.abu-header h2{
+    padding: 6px 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.abu-custom .abu-contant button{
+    border: none;
+    background-color: #b7e1e4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.abu-custom .abu-body {
+    padding: 6px 10px;
+} 
+
+.abu-custom .abu-fotter{
+    text-align: right;
+    padding: 10px 10px;
+}
+
+.abu-custom .abu-fotter a{
+    padding: 5px 10px;
+}
+
+.abu-custom .abu-fotter a:nth-child(1){
+    color: #097deb;
+   
+}
+
+.abu-custom .abu-fotter a:nth-child(2){
+    background-color: #097deb;
+    padding: 7px 25px;
+    color: #fff;
+    border-radius: 5px;
+   
+}
